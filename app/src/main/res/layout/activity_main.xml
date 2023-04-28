@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_color_btn"
     tools:context=".MainActivity">
 
     <ImageView
@@ -28,25 +29,28 @@
             android:layout_gravity="center"
             android:src="@drawable/instatitle"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/colorAccent"
-            android:backgroundTint="@color/purple_200"
-            android:text="Log in"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:background="@drawable/background_color_btn"
+            android:text="Log In"
             android:textAllCaps="false" />
 
         <Space
             android:layout_width="0dp"
             android:layout_height="10dp"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/registerBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/background_color_btn"
+            android:textSize="20dp"
+            android:textColor="@color/black"
             android:text="Register"
+            android:background="@drawable/background_color_btn"
             android:textAllCaps="false"/>
 
     </LinearLayout>
